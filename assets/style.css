@@ -1,13 +1,28 @@
 /*General*/
 
 body {
+  margin: 0 0;
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   background-color: black;
   opacity: 0.9;
+  text-align: center;
 }
 
+h2, h3, h4 {
+  margin: 0;
+  padding: 10px;
+}
+
+/*placeholder borders*/
+
+header, nav, div {
+  border: 1px white solid;
+}
+
+
+/*Header*/
 nav {
   list-style: none;
   text-decoration: underline;
@@ -22,5 +37,35 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
   width: 100%;
+  height: 69px;
+  background-color: black;
+
+}
+
+header img {
+  max-height: 100%;
+}
+
+/*Content*/
+.content {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+/*Mission section*/
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+}
+
+.mission .text {
+  background-color: black;
+  flex-grow: 1;
 }
