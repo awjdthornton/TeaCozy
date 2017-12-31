@@ -56,7 +56,7 @@ header {
 }
 
 header img {
-  max-height: 100%;
+  height: 50px;
 }
 
 /*Mission section*/
