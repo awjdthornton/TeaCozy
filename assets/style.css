@@ -11,20 +11,31 @@ body {
 }
 
 h2, h3, h4 {
+  display: block;
   margin: 0;
   padding: 10px;
 }
 
+.content {
+  width: 1200px;
+  margin: auto;
+}
+
 /*placeholder borders*/
 
-header, nav, div {
+/* header, nav, div {
   border: 1px white solid;
-}
+} */
 
 /*Header*/
 
 nav {
   list-style: none;
+
+}
+
+nav span {
+  padding: 20px 10px;
   text-decoration: underline;
 }
 
@@ -41,21 +52,18 @@ header {
   width: 100%;
   height: 69px;
   background-color: black;
+  border-bottom: 1px solid seashell;
 }
 
 header img {
   max-height: 100%;
 }
 
-/*Content*/
-
-.content {
-  display: flex;
-  justify-content: center;
+/*Mission section*/
+#top-content {
   padding-top: 70px;
 }
 
-/*Mission section*/
 
 .mission {
   display: flex;
@@ -63,10 +71,81 @@ header img {
   align-items: center;
   background-image: url("images/img-mission-background.jpg");
   height: 700px;
-  width: 1200px;
+  width: 100%;
 }
 
 .mission .text {
   background-color: black;
   flex-grow: 1;
+}
+
+/*Teas section*/
+
+#middle-content {
+  padding-top: 70px;
+}
+
+.product-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  display:flex;
+  flex-direction: column;
+  justify-content: space;
+  align-items: center;
+  padding: 5px;
+}
+
+.product img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
+
+/*Locations section*/
+
+#bottom-content {
+  height: 500px;
+  padding-top: 70px;
+  background-image: url(images/img-locations-background.jpg);
+}
+
+.locations {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 1;
+  background-color: black;
+  width: 300px;
+  margin: 5px 20px;
+  flex-basis: 280px;
+}
+
+/*Contact Section*/
+
+#contact {
+
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  width: 100%;
+}
+
+footer {
+  text-align: left;
+  margin-left: 20px;
 }
